@@ -80,14 +80,6 @@
 					<groupId>jline</groupId>
 					<artifactId>jline</artifactId>
 				</exclusion>
-				<exclusion>
-					<groupId>org.apache.hbase</groupId>
-					<artifactId>hbase-server</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.hadoop</groupId>
-					<artifactId>hadoop-mapreduce-client-core</artifactId>
-				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
