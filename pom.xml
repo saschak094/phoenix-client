@@ -21,7 +21,7 @@
 			<groupId>org.apache.phoenix</groupId>
 			<artifactId>phoenix-core</artifactId>
 			<version>4.7.0-HBase-1.1</version>
-			<exclusions> <!-- the slf4j unification -->
+			<exclusions>
 				<exclusion>
 					<groupId>log4j</groupId>
 					<artifactId>log4j</artifactId>
@@ -34,7 +34,6 @@
 					<groupId>commons-logging</groupId>
 					<artifactId>commons-logging</artifactId>
 				</exclusion>
-				<!-- Following exclusion list from HBASE-11412 -->
 				<exclusion>
 					<groupId>com.sun.jersey</groupId>
 					<artifactId>jersey-server</artifactId>
@@ -123,6 +122,10 @@
 						<relocation>
 							<pattern>com.sun.jersey</pattern>
 							<shadedPattern>accenture.com.sun.jersey</shadedPattern>
+						</relocation>
+						<relocation>
+							<pattern>javax.servlet</pattern>
+							<shadedPattern>accenture.javax.servlet</shadedPattern>
 						</relocation>
 					</relocations>
 
