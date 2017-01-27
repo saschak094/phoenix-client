@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.accenture</groupId>
+	<groupId>com.shaded</groupId>
 	<artifactId>phoenix-shaded</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -117,15 +117,15 @@
 					<relocations>
 						<relocation>
 							<pattern>com.google</pattern>
-							<shadedPattern>accenture.com.google</shadedPattern>
+							<shadedPattern>phoenix.shaded.com.google</shadedPattern>
 						</relocation>
 						<relocation>
 							<pattern>com.sun.jersey</pattern>
-							<shadedPattern>accenture.com.sun.jersey</shadedPattern>
+							<shadedPattern>phoenix.shaded.com.sun.jersey</shadedPattern>
 						</relocation>
 						<relocation>
 							<pattern>javax.servlet</pattern>
-							<shadedPattern>accenture.javax.servlet</shadedPattern>
+							<shadedPattern>phoenix.shaded.javax.servlet</shadedPattern>
 						</relocation>
 					</relocations>
 
